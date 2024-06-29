@@ -1,0 +1,20 @@
+{% load static %}
+{% for i in Dfs %}
+    <h1> NOTICE TO SHOW CAUSE</h1>
+    <h1>IN THE COURT OF {{CourtName}}</h1>
+    <h1>AT {{City}}</h1>
+    <h1>I.A. No: {{IANumber}} OF 2024</h1>
+    <h1>IN</h1>
+    <h1>O.S No: {{OSNumber}} OF 2024</h1>
+    <h2 style="text-align: left;">BETWEEN:</h2>
+    <h2 style="text-align: left;">{{Plaintiff1}}</h2>
+    <h2 style="text-align: right;">{{tag1}}</h2>
+    <h2 style="text-align: center;">AND</h2>
+    <h2 style="text-align: left;">{{Defendant1}}</h2>
+    <h2 style="text-align: right;">{{tag2}}</h2>
+    <h3>To</h3>
+    <h3>{{i}}</h3>
+    <p>Whereas the above Named Petitioner_________ has made an Application to this court. U/O 31 Rule 1 & 2 of CPC</p>
+    <p>You are hereby wanted to appear in this court in person, or by a pleader duly instructed on the ___ day of _________ 2024 at 10:30 a.m. in the forenoon to show Cause of against the Application, failing which the said Application will be heard and determined exparty. Given under my hand and seal of the Court this______day of ____________2024</p>
+    <br>
+{% endfor %}

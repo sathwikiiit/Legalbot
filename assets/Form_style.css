@@ -1,0 +1,63 @@
+@import url(Login_style.css);
+
+
+form{
+	width: 80%;
+}
+
+form label:nth-child(2n) input:nth-child(2n){
+	grid-column: 2;
+	width: 20%;
+	margin: 10px;
+}
+form label:nth-child(2n+1) input:nth-child(2n+1){
+	grid-column: 1;
+	width: 20%;
+	margin: 10px;
+}
+
+label,input[type=text], textarea{
+	width: 90%;
+}
+select{
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	width: 90%;
+}
+.toinclude{
+	display:inline-flex;
+	align-items: center;
+}
+
+label, input[type=checkbox]{
+	padding: 2px 5px;
+	margin: 5px;
+	height: 20px;
+}
+button {
+	width: 45%;
+}
+input{
+	height: 40px;
+}
+@media only screen and (min-width: 900px) {
+.Mform {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	width: 80%;
+}
+}
+@media only screen and (max-width: 900px) {
+	.Mform {
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 80%;
+	}
+	form{
+		height: 400px;
+		overflow-y: auto;
+	}
+	}

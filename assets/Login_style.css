@@ -1,0 +1,71 @@
+:root {
+	--bg:#cde4e9;
+	--primary:#385732;
+	--secondary:#86b339;
+	--tertiary:#8d6a9f;
+	--quad:#FFFBDB;
+}
+
+body {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color:var(--primary);
+	margin: 0px;
+	overflow-y: hidden;
+}
+header-content{
+	background-color: var(--primary);
+    width: 100%;
+}
+
+footer-content {
+	text-align: center;
+	position: absolute;
+	width:100%;
+	bottom: 0px;
+}
+
+form{
+	border-radius: 1%;
+	box-shadow: 2px 2px #555;
+	background-color:var(--bg);
+	padding: 30px 30px;
+	margin: 40px auto;
+	width: 400px;
+}
+form h3{
+	margin: 0px;
+	color: var(--primary);
+}
+
+label, input {
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+label {
+	color: #555;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+input[type=text],input[type=password] ,textarea {
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+input[type=text]:focus,textarea:focus {
+	background-color: aquamarine;
+}
+
+button {
+	border: none;
+	padding: 15px;
+	border-radius: 5px;
+	color: white;
+	background-color: var(--secondary);
+	width: 100%;
+}
+

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalbot</title>
+    <link rel="stylesheet" href="{% static 'Dashboard_style.css' %}">
+    <script> 
+        im = "{% static 'icon.png'%}"
+        user= "{{user}}"
+    </script>
+    <script src="{% static 'Components.js' %}" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-content></header-content>
+    <table>
+        <tr>
+            <th>Suit Name</th>
+            <th>OS Number</th>
+            <th>Year</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Am vs Bm</td>
+            <td>150</td>
+            <td>2015</td>
+            <td>Sangareddy</td>
+        </tr>
+    </table>
+    <div class="Buttons">
+        <button onclick="location.href='SuitForm'">New Suit</button>
+        <button>Misc</button>
+    </div>
+    <footer-content></footer-content>
+
+</body>
+</html>

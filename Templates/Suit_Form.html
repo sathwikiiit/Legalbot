@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalbot</title>
+    <link rel="stylesheet" href="{% static 'Form_style.css' %} ">
+    <script>
+        im = "{% static 'icon.png'%}"
+        user="{{user}}"
+    </script>
+    <script src="{% static 'Components.js' %}" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-content></header-content>
+    <form action="../Confirm" method="post">
+        {% csrf_token %}
+        <div class = "Mform">
+            <label for="CourtName">Court Name</label>
+            <input type="text" id="CourtName" name="CourtName">
+            <label for="City">City</label>
+            <input type="text" id="City" name="City">
+            <label for="OSNumber">OS Number</label>
+            <input type="text" id="OSNumber" name="OSNumber">
+            <label for="IANumber">IA Number</label>
+            <input type="text" id="IANumber" name="IANumber">
+            <label for="Plaintiff1">Plaintiff No. 1</label>
+            <input type="text" id="Plaintiff1" name="Plaintiff1">
+            <label for="Defendant1">Defendant No. 1</label>
+            <input type="text" id="Defendant1" name="Defendant1">
+            <label for="Pfs">Plaintiffs</label>
+            <textarea type="text" id="Pfs" name="Pfs"></textarea>
+            <label for="Dfs">Defendants</label>
+            <textarea type="text" id="Dfs" name="Dfs"></textarea>
+        </div>
+        <div class = "toinclude">
+            <input type="checkbox" id="notice" name="Notice">
+            <label for="notice">Notice</label>
+            <input type="checkbox" id="summons" name = Summons>
+            <label for="summons">Summons</label>
+            <input type="checkbox" id="Ver_aff" name="Ver_aff">
+            <label for="Ver_aff">Verification_Afdt</label>
+            <input type="checkbox" id="Add_Aff" name="Add_Aff">
+            <label for="Ver_aff">Address_Afdt</label>
+        </div>    
+        <button> Submit</button>
+    </form>
+    <footer-content></footer-content>
+
+</body>
+</html>

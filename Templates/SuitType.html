@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalbot</title>
+    <link rel="stylesheet" href="{% static 'type_style.css' %}">
+    <script>
+        im = "{% static 'icon.png'%}"
+        user="{{user}}"
+    </script>
+    <script src="{% static 'Components.js' %}" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-content></header-content>
+    <form method="post">
+        {% csrf_token %}
+        <h2 class="suit_type">Suit For:</h2>
+        <select name="type" id="type">
+            <option value="sop">Partition and Separate Posession</option>
+            <option value="sop_d">Partition and Separate Posession (including Documents cancellation)</option>
+            <option value="sopi">Suit for Perpetual Injunction</option>
+            <option value="sod_r">Suit for Declaration and recovery of posession</option>
+            <option value="sod">Suit for Declaration</option>
+        </select>
+    </form>
+    <div class="Mform">
+        <button onclick="location.href='../suit'">Create Document</button>
+        <button type ="submit" onclick="location.href='../notice'">Create Notices & Summons</button>
+    </div>
+    <footer-content></footer-content>
+</body>
+</html>

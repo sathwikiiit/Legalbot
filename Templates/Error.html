@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalbot</title>
+    <link rel="stylesheet" href="{% static 'Dashboard_style.css' %}">
+    <script> 
+        im = "{% static 'icon.png'%}"
+        user = "{{user}}"
+    </script>
+    <script src="{% static 'Components.js' %}" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-content></header-content>
+    <h2 style="color: red;">{{content}}</h2>
+    <footer-content></footer-content>
+
+</body>
+</html>

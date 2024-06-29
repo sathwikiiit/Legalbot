@@ -1,0 +1,23 @@
+@import url(Login_style.css);
+.Details{
+    display: grid;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.Details h5:nth-child(2n) {
+    grid-column: 1;
+}
+
+.Details h5:nth-child(2n+1) {
+    grid-column: 2;
+}
+
+.Details h2{
+    grid-column:span 2;
+    text-align: center;
+}
+button{
+    grid-column: span 2;
+    margin: 20px auto;
+}

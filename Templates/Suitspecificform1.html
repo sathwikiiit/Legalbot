@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalbot</title>
+    <link rel="stylesheet" href="{% static 'Form_style.css' %} ">
+    <script> im = "{% static 'icon.png'%}"</script>
+    <script src="{% static 'Components.js' %}" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-content></header-content>
+    <form action="">
+        {% csrf_token %}
+        <div class = "Mform">
+            <label for="CName">Court Name</label>
+            <input type="text" id="CName" name="CName">
+            <label for="CCity">City</label>
+            <input type="text" id="CCity" name="CCity">
+            <label for="OSNum">OS Number</label>
+            <input type="text" id="OSNum" name="OSNum">
+            <label for="IANum">IA Number</label>
+            <input type="text" id="IANum" name="IANum">
+            <label for="Pf1">Plaintiff No. 1</label>
+            <input type="text" id="Pf1" name="Pf1">
+            <label for="Df1">Defendant No. 1</label>
+            <input type="text" id="Df1" name="Df1">
+            <label for="Pfs">Plaintiffs</label>
+            <textarea type="text" id="Pfs" name="Pfs"></textarea>
+            <label for="Dfs">Defendants</label>
+            <textarea type="text" id="Dfs" name="Dfs"></textarea>
+        </div>
+        <div class = "toinclude">
+            <input type="checkbox" id="notice">
+            <label for="notice">Notice</label>
+            <input type="checkbox" id="summons">
+            <label for="summons">Summons</label>
+            <input type="checkbox" id="Ver_aff">
+            <label for="Ver_aff">Verification Afdt</label>
+            <input type="checkbox" id="Add_Aff">
+            <label for="Ver_aff">Address Afdt</label>
+        </div>    
+    </form>
+    <button> Submit</button>
+    <footer-content></footer-content>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color:#f5efe6;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 15 pt;
+    line-break: normal;
+}
+.head{
+    text-align: center;
+    display: inline;
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 16pt;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: normal;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 16pt;
+    text-align: left;
+    font-weight: normal;
+    margin: 0px;
+}
+li {
+    font-size: 16pt;
+    text-align: justify;
+    margin: 0px;
+}
+p {
+    font-size: 16pt;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalbot</title>
+    <link rel="stylesheet" href="{% static 'details.css' %}">
+    <script>
+        im = "{% static 'icon.png'%}"
+        user = "{{user}}"
+    </script>
+    <script src="{% static 'Components.js' %}" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-content></header-content>
+    <div class="Details">
+        <h2>Details</h2>
+        {% for i,j in dict %}
+            <h5>{{i}} : {{j}}</h5>
+        {% endfor %}
+        <h5>Docs included: {{docs}}</h5>
+        <button onclick="location.href ='../SuitType'">Confirm Details</button>
+    </div>
+    <h2>{{Docs}}</h2>
+    <footer-content></footer-content>
+</body>
+</html>
